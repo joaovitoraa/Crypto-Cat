@@ -224,7 +224,8 @@ img.gatinho{
 img.blush {
 
     position: absolute;
-    width: 100%;
+    width: 80%;
+
 }
 img.blush.um{
     top: -80%;
@@ -246,7 +247,7 @@ section.fundo {
     height: 100vh;
     min-height: 100vh;
     overflow: hidden;
-
+   
 }
 section.fundo div{
     width: 8.33%;
