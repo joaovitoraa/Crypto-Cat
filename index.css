@@ -56,6 +56,7 @@ section.icones{
     position: absolute;
     top: 30%;
     right: 100px;
+    z-index: 1;
 }
 section.icones img{
     width: 100%;
@@ -127,6 +128,11 @@ section.titulo .texto h2{
     top: 35%;
 
 }
+ section.titulo button:hover{
+    border: 3px solid #fff;
+    box-shadow: 0 10px 30px 10px #ed42df39; 
+
+}
 section.titulo button { 
     font-family: 'bold';
     font-size: 12px;
@@ -138,12 +144,9 @@ section.titulo button {
     transition: all 0.3s;
     cursor: pointer;
     margin: 20px 0 0 90px;
+    z-index: 1;
  }
- section.titulo button:hover{
-    border: 3px solid #fff;
-    box-shadow: 0 10px 30px 10px #ed42df39; 
-     
-}
+
 body *{
     box-sizing: border-box;
 
@@ -203,7 +206,6 @@ body *{
     cursor: pointer;
  }
  section.menu button:hover{
-
     color: #0E2827;
     background-color:#7cfec0 ;
  }
@@ -295,10 +297,6 @@ section.fundo div:hover{
     section.titulo button { 
         margin: 20px 0 0 40px;
      }
-     section.titulo button:hover{
-        border: 3px solid #fff;
-        box-shadow: 0 10px 30px 10px #ed42df39; 
-    }
         /* MENU */
     section.menu{
     
