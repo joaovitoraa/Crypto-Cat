@@ -1,0 +1,343 @@
+@font-face {
+    font-family: 'extrabold';
+    src: url('./fontes/body-text-large-extrabold.woff');
+}
+@font-face {
+    font-family: 'bold';
+    src: url('./fontes/montserrat-bold.woff');
+}
+@font-face {
+    font-family: 'medium';
+    src: url('./fontes/montserrat-medium.woff');
+}
+/*  BASE */
+
+html{
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+body {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ background-color: #0f2827;
+ position: relative;
+ overflow: hidden;
+}
+
+/*  TITULO DA PAGINA */
+h1,h2,h3,h4,h5,h6, p, input,button, a, img{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+
+}
+/*  icones*/
+
+section.icones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 100px;
+}
+section.icones img{
+    width: 100%;
+    max-width: 15px;
+    margin: 15px 0;
+
+}
+section.icones img:hover{
+    transform: scale(1.2);
+}
+/*  Pessoas*/
+section.pessoas{
+display: flex;
+align-items: center;
+position: absolute;
+bottom: 10%;
+left: 100px;
+}
+section.pessoas img{
+    width: 100%;
+    max-width: 100px;
+}
+section.pessoas div.texto {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 20px;
+}
+
+section.pessoas div.texto h2 {
+font-family: 'bold';
+font-size: 25px;
+color: #fff;
+}
+section.pessoas div.texto p {
+    font-family: 'bold';
+    font-size: 15px;
+    color: #7cfec0;
+    }
+
+/*  TITULO */
+section.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    padding: 0 0 0 100px;
+}
+section.titulo .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding: 0 0 0 90px;
+
+}
+section.titulo .texto h1{
+    font-family: 'extrabold';
+    font-size: 74px;
+    color: #fff;
+}
+section.titulo .texto h2{
+    font-family: 'bold';
+    font-size: 84px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 35%;
+
+}
+section.titulo button { 
+    font-family: 'bold';
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #ed42de;
+    border: 3px solid #ed42de;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 20px 0 0 90px;
+ }
+ section.titulo button:hover{
+    border: 3px solid #fff;
+    box-shadow: 0 10px 30px 10px #ed42df39; 
+     
+}
+body *{
+    box-sizing: border-box;
+
+}
+/*  MENU */
+ section.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px 0 100px;
+ }
+ section.menu div.icone{
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px 0 0;
+ }
+ section.menu div.icone div{
+   width: 50px;
+   height: 3px;
+   margin: 5px 0;
+   background-color: white;
+ }
+ section.menu img.logo{
+    width: 100%;
+    max-width: 120px;
+    margin-right: auto;
+ }
+ section.menu .opcoes{
+    display: flex;
+    margin:  0 100px 0 0;
+ }
+ section.menu .opcoes a{
+    font-family: 'bold';
+    font-size: 12px;
+    color: #ffffff;
+    margin: 0 20px;
+    transition: all 0.3s;
+ }
+ section.menu .opcoes a:hover{
+    opacity: 0.5;
+ }
+
+ section.menu button{
+    font-family: 'bold';
+    font-size: 12px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 3px solid #7cfec0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+ }
+ section.menu button:hover{
+
+    color: #0E2827;
+    background-color:#7cfec0 ;
+ }
+
+
+/*  IMAGEM  GATINHO */
+
+img.gatinho{
+    position: absolute;
+    width: 40%;
+    right: 15%;
+    bottom: 0;
+    z-index: 2;
+}
+img.blush {
+
+    position: absolute;
+    width: 100%;
+}
+img.blush.um{
+    top: -100%;
+    left: -50%;
+    opacity: 0.5;
+
+}
+img.blush.dois{
+    bottom: -100%;
+    right: -20%;
+    opacity: 0.5;
+}
+/*  FUNDO */
+
+section.fundo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+section.fundo div{
+    width: 8.33%;
+    height: 91px;
+    background: #0E2827;
+    border: 1px solid #193532;
+    transition: all 0.3s;
+}
+
+section.fundo div.ciano {
+    background-color: #7cfec0;
+    border: 1px solid #7cfec0;
+
+}
+section.fundo div.ciano:hover {
+    background-color: #7cfec0;
+}
+section.fundo div:hover{
+    background-color:#193532 ;
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width:1000px){
+
+    /*  Pessoas*/
+    section.pessoas{
+    display: none;
+    }
+
+    /*  icones*/
+    section.icones{
+    display: none;
+}
+    /* TITULO */
+    section.titulo{
+        top: 20%;
+        padding: 0 0 0 30px;
+    }
+    section.titulo .texto{
+        padding: 0 0 0 40px;
+    }
+    section.titulo .texto h1{
+        font-size: 34px;
+    }
+    section.titulo .texto h2{
+        font-size: 34px;
+    }
+    section.titulo button { 
+        margin: 20px 0 0 40px;
+     }
+     section.titulo button:hover{
+        border: 3px solid #fff;
+        box-shadow: 0 10px 30px 10px #ed42df39; 
+    }
+        /* MENU */
+    section.menu{
+    
+        padding: 40px 30px 0 30px;
+     }
+     section.menu div.icone{
+        display: none;
+     }
+    
+     section.menu img.logo{
+        max-width: 140px;
+        margin-right: 0;
+     }
+     section.menu .opcoes{
+        display: none;
+     }
+     
+/*  IMAGEM  GATINHO */
+
+img.gatinho{
+    width: 100%;
+    max-width: 600px;
+    right: 20px;
+}
+img.blush {
+    position: absolute;
+    width: 200%;
+    pointer-events: none;
+    z-index: 1;
+}
+img.blush.um{
+    top: -50%;
+    left: -100%;
+    opacity: 0.5;
+
+}
+img.blush.dois{
+    bottom: -20%;
+    right: -40%;
+    opacity: 0.5;
+}
+}
