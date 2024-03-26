@@ -56,12 +56,13 @@ section.icones{
     position: absolute;
     top: 30%;
     right: 100px;
-    z-index: 1;
+
 }
 section.icones img{
     width: 100%;
     max-width: 15px;
     margin: 15px 0;
+    z-index: 1;
 
 }
 section.icones img:hover{
@@ -131,7 +132,7 @@ section.titulo .texto h2{
  section.titulo button:hover{
     border: 3px solid #fff;
     box-shadow: 0 10px 30px 10px #ed42df39; 
-
+ 
 }
 section.titulo button { 
     font-family: 'bold';
@@ -226,9 +227,9 @@ img.blush {
     width: 100%;
 }
 img.blush.um{
-    top: -100%;
+    top: -80%;
     left: -50%;
-    opacity: 0.5;
+    opacity: 0.3;
 
 }
 img.blush.dois{
@@ -249,10 +250,11 @@ section.fundo {
 }
 section.fundo div{
     width: 8.33%;
-    height: 91px;
+    height: 96px;
     background: #0E2827;
     border: 1px solid #193532;
     transition: all 0.3s;
+   
 }
 
 section.fundo div.ciano {
